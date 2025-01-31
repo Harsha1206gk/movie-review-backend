@@ -14,7 +14,7 @@ const bcrypt = require('bcryptjs');  // Import bcrypt for password hashing
 
 const app = express();
 const User = require('./models/User'); // Ensure correct path
-
+app.use(cors());
 const port = process.env.PORT || 5000;
 const mongourl = process.env.MONGO_URI || "mongodb://localhost:27017/Practise";
 
